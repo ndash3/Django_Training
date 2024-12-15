@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from templateapp import views
+from testmodelapp.views import student_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path("electronics/", views.electronicview),
     path("shoes/", views.shoesview),
     path("clothing/", views.clothingview),
+    path("student/", student_view)
 ]
