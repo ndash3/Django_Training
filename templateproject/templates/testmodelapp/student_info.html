@@ -5,7 +5,7 @@
     <title>Student Information</title>
 </head>
 <body>
-    <h1>Student Information</h1>
+    <h1>{{item.name}} Information</h1>
     <table border="1px solid black">
       <tr>
         <th>Name</th>
@@ -14,15 +14,15 @@
         <th>Subject</th>
         <th>Mark</th>
       </tr>
-      {% for item in result %}
-          <tr>
-            <td>{{item.name}}</td>
-            <td>{{item.age}}</td>
-            <td>{{item.roll}}</td>
-            <td>{{item.subject}}</td>
-            <td>{{item.mark}}</td>
-          </tr>
-      {% endfor %}
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.roll}}</td>
+        <td>{{item.subject}}</td>
+        <td>{{item.mark}}</td>
+      </tr>
     </table>
+    <br>
+    <a href="/student">Back to Homepage</a>
 </body>
 </html>

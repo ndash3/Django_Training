@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <ul>
+        <li>Name</li>
+        {% for item in result %}
+            <li><a href="{{item.id}}/">{{item.name}}</a> <a href="update/{{item.id}}/">Update</a></li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
